@@ -1,0 +1,3 @@
+@keyframes bounce{0%{transform:translateY(0)}25%{transform:translateY(-8px)}50%{transform:translateY(4px)}75%{transform:translateY(-4px)}100%{transform:translateY(0)}}@keyframes rotating{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}@keyframes pulse{0%,
+    100%{transform:scale(1)}50%{transform:scale(1.2)}}nav{display:flex;flex-direction:column;justify-content:center;align-items:center;position:fixed;width:2rem;height:70vh;background-color:#4e4e50;padding:0 0.5rem;left:3rem;gap:2rem;border-radius:3rem}nav .icon{fill:#edf5e1}nav .icon:hover{fill:#950740;animation:bounce 1s;cursor:pointer}
+/*# sourceMappingURL=Nav.css.map */

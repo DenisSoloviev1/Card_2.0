@@ -1,0 +1,26 @@
+@import "../Other/Variables.scss";
+@import "../Other/Animations.scss";
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 2rem;
+    height: 70vh;
+    background-color: $color2;
+    padding: 0 0.5rem;
+    left: 3rem;
+    gap: 2rem;
+    border-radius: 3rem;
+  
+    .icon {
+      fill: $color1;
+    }
+    
+    .icon:hover {
+      fill: $color4;
+      animation: bounce 1s;
+      cursor: pointer;
+    }
+  }

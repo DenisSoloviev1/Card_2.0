@@ -1,0 +1,85 @@
+@import "../Other/Variables.scss";
+@import "../Other/Animations.scss";
+
+main {
+  width: 100%;
+  height: 100%;
+
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    .card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      align-items: center;
+      border-radius: 4rem;
+      border: 2px solid $color1;
+      width: 35%;
+      height: 90%;
+
+      .myPhoto {
+        width: 95%;
+        height: 95%;
+        border-radius: 3rem;
+        margin: 1rem;
+      }
+      .bio {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 95%;
+        height: 25%;
+        border-radius: 0 0 3rem 3rem;
+        backdrop-filter: blur(0.5rem);
+        font-weight: bold;
+        color: $color1;
+        margin: 1rem;
+        text-shadow: 3px 3px 5px $color3;
+      }
+    }
+
+    .display {
+      display: flex;
+      width: 50%;
+      height: 90%;
+      border-radius: 4rem;
+      border: 2px solid $color1;
+
+      .intro,
+      .aboutMe,
+      .skills,
+      .portfolio {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        width: 95%;
+        margin: 1rem;
+        padding: 2rem;
+        background-color: $color2;
+        border-radius: 3rem;
+
+        title {
+          display: block;
+          border-radius: 3rem;
+          padding: 0 0.5rem;
+          background-color: $color4;
+        }
+      }
+      .aboutMe,
+      .skills,
+      .portfolio {
+        display: none;
+      }
+    }
+  }
+}
