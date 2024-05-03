@@ -1,5 +1,5 @@
-import "../Main.css";
-import "../Skills/Skills.css";
+import "../Main.scss";
+import "../Skills/Skills.scss";
 export default function Skills() {
   return (
     <div className="skills">

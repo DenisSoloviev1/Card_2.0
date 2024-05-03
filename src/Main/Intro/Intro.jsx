@@ -1,5 +1,5 @@
-import "../Main.css";
-import "../Intro/Intro.css";
+import "../Main.scss";
+import "../Intro/Intro.scss";
 export default function Intro() {
   return (
     <div className="intro">
@@ -11,7 +11,7 @@ export default function Intro() {
         улучшению, делаю то, что завораживает и вовлекает каждого
       </p>
       <div className="buttonCircleGroup">
-        <button type="button">
+        <button>
           <svg viewBox="0 0 471.2 471.2" width="2rem" height="2rem">
             <g>
               <g>

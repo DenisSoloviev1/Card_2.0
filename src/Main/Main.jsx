@@ -1,4 +1,4 @@
-import "./Main.css";
+import "./Main.scss";
 import Intro from "./Intro/Intro.jsx"
 import AboutMe from "./AboutMe/AboutMe.jsx"
 import Skills from "./Skills/Skills.jsx"
