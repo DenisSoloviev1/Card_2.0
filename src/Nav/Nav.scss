@@ -10,27 +10,32 @@ nav {
   height: 70vh;
   background-color: $color2;
   left: 3rem;
-  gap: 2rem;
   border-radius: 3rem;
 
-  button{
+  button {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 10%;
+    height: 15%;
     border: 0px;
     background-color: $color2;
-    
+
     .icon {
       fill: $color1;
     }
-  
+
     .icon:hover {
       fill: $color4;
-      animation: bounce 1s;
       cursor: pointer;
+    }
+  }
+  .active {
+    border-bottom: 2px solid $color4;
+    svg {
+      fill: $color4;
+      animation: bounce 1s;
     }
   }
 }
