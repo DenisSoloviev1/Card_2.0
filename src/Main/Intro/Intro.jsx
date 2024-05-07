@@ -23,7 +23,7 @@ export default function Intro() {
           Скачать РЕЗЮМЕ
         </button>
         <div className="circle">
-          <img src="images/circular_text.png" alt="circular_text" />
+          <img src="images/circular_text.png" alt="circular text" />
           <svg viewBox="0 0 512 512">
             <g>
               <g>

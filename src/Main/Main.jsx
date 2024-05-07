@@ -1,14 +1,10 @@
 import "./Main.scss";
 import Intro from "./Intro/Intro.jsx";
-// import AboutMe from "./AboutMe/AboutMe.jsx";
-// import Skills from "./Skills/Skills.jsx";
-// import Portfolio from "./Portfolio/Portfolio.jsx";
-// import { activeButton } from "../Nav/Nav.jsx";
-// import {Show} from "../Nav/Nav.jsx"
+import AboutMe from "./AboutMe/AboutMe.jsx";
+import Skills from "./Skills/Skills.jsx";
+import Portfolio from "./Portfolio/Portfolio.jsx";
 
-export default function Main() {
-  
-
+export default function Main({activeButton}) {
   return (
     <main>
       <section>
@@ -22,11 +18,14 @@ export default function Main() {
       </section>
 
       <section>
-        {/* <Show /> */}
-        <div className="display"><Intro/></div>
+        <div className="display">
+          {activeButton==='intro' && <Intro/>}
+          {activeButton==='about_me' && <AboutMe/>}
+          {activeButton==='skills' && <Skills />}
+          {activeButton==='portfolio' && <Portfolio />}
+        </div>
       </section>
     </main>
   );
 }
-
 

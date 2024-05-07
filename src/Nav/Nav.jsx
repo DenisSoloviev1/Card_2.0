@@ -1,8 +1,7 @@
 import "./Nav.scss";
-import React, { useState } from "react";
 
-export default function Nav() {
-  const [activeButton, setActiveButton] = useState("intro");
+export default function Nav({setActiveButton, activeButton}) {
+  
   function ButtonItem({ svg, isActive, id }) {
     return (
       <button
