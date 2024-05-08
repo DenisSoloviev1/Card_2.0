@@ -1,6 +1,9 @@
 import "../Main.scss";
 import "../Intro/Intro.scss";
+import { downloadFile } from "./dowloadFile";
+
 export default function Intro() {
+ 
   return (
     <div className="intro">
       <title>главная</title>
@@ -11,7 +14,7 @@ export default function Intro() {
         улучшению, делаю то, что завораживает и вовлекает каждого
       </p>
       <div className="buttonCircleGroup">
-        <button>
+        <button onClick={()=>downloadFile('https://disk.yandex.ru/i/ii9zGg8x0R5MWQ')}>
           <svg viewBox="0 0 471.2 471.2" width="2rem" height="2rem">
             <g>
               <g>
@@ -23,7 +26,7 @@ export default function Intro() {
           Скачать РЕЗЮМЕ
         </button>
         <div className="circle">
-          <img src="images/circular_text.png" alt="circular text" />
+          <img src="../images/circularText.png" alt="circular text" />
           <svg viewBox="0 0 512 512">
             <g>
               <g>
