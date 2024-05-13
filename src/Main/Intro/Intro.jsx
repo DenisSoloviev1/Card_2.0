@@ -1,20 +1,24 @@
 import "../Main.scss";
 import "../Intro/Intro.scss";
-import { downloadFile } from "./dowloadFile";
+import { downloadFile } from "../../Other/dowloadFile";
 
-export default function Intro() {
- 
+export default function Intro({ setActiveButton }) {
   return (
     <div className="intro">
       <title>главная</title>
-      <h1>Создаю впечатления благодаря коду</h1>
+      <h1>Создаю впечатления кодом</h1>
       <p>
         Я frontend разработчик с огромным интересом к реализации красивых и
         функциональных интерфейсов, постоянно стремлюсь к саморазвитию и
         улучшению, делаю то, что завораживает и вовлекает каждого
       </p>
       <div className="buttonCircleGroup">
-        <button onClick={()=>downloadFile('https://disk.yandex.ru/i/ii9zGg8x0R5MWQ')}>
+        <button
+          className="button"
+          onClick={() =>
+            downloadFile("https://disk.yandex.ru/i/ii9zGg8x0R5MWQ")
+          }
+        >
           <svg viewBox="0 0 471.2 471.2" width="2rem" height="2rem">
             <g>
               <g>
@@ -25,7 +29,7 @@ export default function Intro() {
           </svg>
           Скачать РЕЗЮМЕ
         </button>
-        <div className="circle">
+        <button className="circle" onClick={() => setActiveButton("portfolio")}>
           <img src="../images/circularText.png" alt="circular text" />
           <svg viewBox="0 0 512 512">
             <g>
@@ -36,7 +40,7 @@ export default function Intro() {
               </g>
             </g>
           </svg>
-        </div>
+        </button>
       </div>
     </div>
   );

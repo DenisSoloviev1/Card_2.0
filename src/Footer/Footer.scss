@@ -11,11 +11,13 @@ footer {
   column-gap: 3rem;
 
   a {
+    font-size: 1.5rem;
     text-decoration: none;
     color: $color1;
   }
   a:hover {
     transition: all 0.2s ease-in-out;
     color: $color4;
+
   }
 }

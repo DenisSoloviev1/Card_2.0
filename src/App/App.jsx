@@ -10,7 +10,7 @@ export default function App() {
   return (
     <>
       <Nav setActiveButton={setActiveButton} activeButton={activeButton} />
-      <Main activeButton={activeButton} />
+      <Main setActiveButton={setActiveButton} activeButton={activeButton} />
       <Footer />
     </>
   );

@@ -1,5 +1,6 @@
 import "../Main.scss";
-// import "../Portfolio/Portfolio.css";
+import "../Portfolio/Portfolio.scss";
+
 export default function Portfolio() {
   return (
     <div className="portfolio">
