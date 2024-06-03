@@ -5,11 +5,10 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: fixed;
-  width: 3rem;
-  height: 70vh;
+  width: 3%;
+  height: 70%;
   background-color: $color2;
-  left: 2rem;
+  left: 1%;
   border-radius: 3rem;
 
   button {
@@ -18,7 +17,7 @@ nav {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 15%;
+    height: 100%;
     border: 0px;
     background-color: $color2;
 
@@ -39,3 +38,4 @@ nav {
     }
   }
 }
+

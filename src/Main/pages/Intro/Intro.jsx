@@ -1,6 +1,6 @@
-import "../Main.scss";
-import "../Intro/Intro.scss";
-import { downloadFile } from "../../Other/dowloadFile";
+import "../../Main.scss";
+import "./Intro.scss";
+import { downloadFile } from "../../../Other/dowloadFile";
 
 export default function Intro({ setActiveButton }) {
   return (

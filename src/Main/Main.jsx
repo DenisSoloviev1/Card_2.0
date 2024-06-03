@@ -1,8 +1,8 @@
 import "./Main.scss";
-import Intro from "./Intro/Intro.jsx";
-import AboutMe from "./AboutMe/AboutMe.jsx";
-import Skills from "./Skills/Skills.jsx";
-import Portfolio from "./Portfolio/Portfolio.jsx";
+import Intro from "../Main/pages/Intro/Intro.jsx";
+import AboutMe from "../Main/pages/AboutMe/AboutMe.jsx";
+import Skills from "../Main/pages/Skills/Skills.jsx";
+import Portfolio from "../Main/pages/Portfolio/Portfolio.jsx";
 
 export default function Main({ setActiveButton, activeButton }) {
   return (
@@ -15,8 +15,9 @@ export default function Main({ setActiveButton, activeButton }) {
         </div>
       </div>
       <div className="display">
-        {activeButton === "intro" && <Intro setActiveButton={setActiveButton} />
-        }
+        {activeButton === "intro" && (
+          <Intro setActiveButton={setActiveButton} />
+        )}
         {activeButton === "about_me" && <AboutMe />}
         {activeButton === "skills" && <Skills />}
         {activeButton === "portfolio" && <Portfolio />}

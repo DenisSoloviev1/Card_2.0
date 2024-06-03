@@ -1,5 +1,5 @@
-import "../Main.scss";
-import "../Portfolio/Portfolio.scss";
+import "../../Main.scss";
+import "./Portfolio.scss";
 
 export default function Portfolio() {
   return (

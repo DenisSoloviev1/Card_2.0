@@ -1,23 +1,21 @@
 @import "../Other/Variables.scss";
 footer {
-  position: fixed;
   transform: rotate(90deg);
-  right: 2rem;
+  right: 1%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 3rem;
-  column-gap: 3rem;
+  width: 3%;
+  column-gap: 3vh;
 
   a {
-    font-size: 1.5rem;
+    font-size: 3vh;
     text-decoration: none;
     color: $color1;
   }
   a:hover {
     transition: all 0.2s ease-in-out;
     color: $color4;
-
   }
 }

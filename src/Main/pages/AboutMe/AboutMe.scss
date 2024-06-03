@@ -1,0 +1,31 @@
+@import "../../../Other/Animations.scss";
+@import "../../../Other/Variables.scss";
+
+.aboutInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  gap: 3rem;
+
+
+  .experience,
+  .project {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 0.5rem;
+
+    font-size: 4rem;
+    font-weight: bold;
+    color: $color4;
+
+    p {
+      color: $color1;
+      font-size: 1.5rem;
+      font-weight: normal;
+    }
+  }
+}
