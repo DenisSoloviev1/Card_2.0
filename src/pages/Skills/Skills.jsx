@@ -1,5 +1,6 @@
-import "../../Main.scss";
+import "../../widgets/Main/Main.scss";
 import "./Skills.scss";
+
 export default function Skills() {
   function Skill({ url, svg, name }) {
     return (

@@ -1,7 +1,7 @@
 import "./App.scss";
-import Nav from "../Nav/Nav.jsx";
-import Footer from "../Footer/Footer.jsx";
-import Main from "../Main/Main.jsx";
+import Header from "../widgets/Header/Header.jsx";
+import Footer from "../widgets/Footer/Footer.jsx";
+import Main from "../widgets/Main/Main.jsx";
 import {useState} from 'react'
 
 export default function App() {
@@ -9,7 +9,7 @@ export default function App() {
 
   return (
     <>
-      <Nav setActiveButton={setActiveButton} activeButton={activeButton} />
+      <Header setActiveButton={setActiveButton} activeButton={activeButton} />
       <Main setActiveButton={setActiveButton} activeButton={activeButton} />
       <Footer />
     </>

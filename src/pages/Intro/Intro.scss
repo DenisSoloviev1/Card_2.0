@@ -1,5 +1,6 @@
-@import "../../../Other/Animations.scss";
-@import "../../../Other/Variables.scss";
+@import "../../shared/Variables.scss";
+@import "../../shared/Animations.scss";
+
 .buttonCircleGroup {
   display: flex;
   flex-direction: row;

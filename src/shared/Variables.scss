@@ -1,0 +1,13 @@
+//colors
+$color1: #edf5e1;
+$color2: #4e4e50;
+$color3: #1a1a1d;
+$color4: #950740;
+
+//mixin
+$maxWidth: 2560;
+@mixin adaptiv-font($pcSize, $mobSize) {
+ $addSize: $pcSize - $mobSize;
+ $maxWidth: $maxWidth - 320;
+ font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}

@@ -1,8 +1,8 @@
 import "./Main.scss";
-import Intro from "../Main/pages/Intro/Intro.jsx";
-import AboutMe from "../Main/pages/AboutMe/AboutMe.jsx";
-import Skills from "../Main/pages/Skills/Skills.jsx";
-import Portfolio from "../Main/pages/Portfolio/Portfolio.jsx";
+import Intro from "../../pages/Intro/Intro.jsx";
+import AboutMe from "../../pages/AboutMe/AboutMe.jsx";
+import Skills from "../../pages/Skills/Skills.jsx";
+import Portfolio from "../../pages/Portfolio/Portfolio.jsx";
 
 export default function Main({ setActiveButton, activeButton }) {
   return (

@@ -1,5 +1,6 @@
-@import "../../../Other/Animations.scss";
-@import "../../../Other/Variables.scss";
+@import "../../shared/Variables.scss";
+@import "../../shared/Animations.scss";
+
 .board {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

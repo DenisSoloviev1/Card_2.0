@@ -1,7 +1,7 @@
-import "./Nav.scss";
-import Tooltip from "../Other/Tooltip/Tooltip.jsx";
+import "./Header.scss";
+import Tooltip from "../../widgets/Tooltip/Tooltip.jsx";
 
-export default function Nav({ setActiveButton, activeButton }) {
+export default function Header({ setActiveButton, activeButton }) {
   function ButtonItem({ svg, isActive, id }) {
     return (
       <button

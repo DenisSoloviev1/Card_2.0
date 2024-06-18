@@ -1,4 +1,4 @@
-import "../../Main.scss";
+import "../../widgets/Main/Main.scss";
 import "./Portfolio.scss";
 
 export default function Portfolio() {

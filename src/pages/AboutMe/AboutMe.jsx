@@ -1,4 +1,4 @@
-import "../../Main.scss";
+import "../../widgets/Main/Main.scss";
 import "./AboutMe.scss";
 export default function AboutMe() {
   return (
