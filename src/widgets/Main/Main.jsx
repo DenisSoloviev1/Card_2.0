@@ -1,27 +1,21 @@
 import "./Main.scss";
+import Card from "../Card/Card.jsx";
+import { Routes, Route } from "react-router-dom";
 import Intro from "../../pages/Intro/Intro.jsx";
 import AboutMe from "../../pages/AboutMe/AboutMe.jsx";
 import Skills from "../../pages/Skills/Skills.jsx";
 import Portfolio from "../../pages/Portfolio/Portfolio.jsx";
 
-export default function Main({ setActiveButton, activeButton }) {
+export default function Main() {
   return (
     <main>
-      <div className="card">
-        <img src="images/me.jpg" alt="me" className="myPhoto" />
-        <div className="bio">
-          <h1>Денис Соловьев</h1>
-          <p>Frontend developer</p>
-        </div>
-      </div>
-      <div className="display">
-        {activeButton === "intro" && (
-          <Intro setActiveButton={setActiveButton} />
-        )}
-        {activeButton === "about_me" && <AboutMe />}
-        {activeButton === "skills" && <Skills />}
-        {activeButton === "portfolio" && <Portfolio />}
-      </div>
+      <Card />
+      <Routes>
+        <Route path="/" element={<Intro />} />
+        <Route path="/aboutMe" element={<AboutMe />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+      </Routes>
     </main>
   );
 }

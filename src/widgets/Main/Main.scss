@@ -2,71 +2,63 @@
 @import "../../shared/Animations.scss";
 
 main {
-  width: 90%;
-  height: 100%;
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  padding: 20% 0;
+  gap: 2rem;
 
-  .card {
-    position: relative;
+  .intro,
+  .aboutMe,
+  .skills,
+  .portfolio {
     display: flex;
     flex-direction: column;
-    justify-content: end;
     align-items: center;
-    border-radius: 12rem 3rem 3rem 3rem;
-    border: 2px solid $color1;
-    width: 35%;
-    height: 80%;
+    width: 70%;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: $color-gray;
 
-    .myPhoto {
-      width: 95%;
-      height: 95%;
-      border-radius: 11rem 2rem 2rem 2rem;
-      margin: 1rem;
-    }
-    .bio {
-      position: absolute;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 96%;
-      height: 25%;
-      border-radius: 0 0 2rem 2rem;
-      backdrop-filter: blur(0.5rem);
-      font-weight: bold;
-      color: $color1;
-      margin: 1rem;
-      text-shadow: 5px 5px 5px $color3;
+    title {
+      display: block;
+      border-radius: 3rem;
+      padding: 0 0.5rem;
+      background-color: $color-red;
     }
   }
+}
 
-  .display {
-    display: flex;
-    width: 50%;
-    height: 70%;
-    border-radius: 4rem;
+@media screen and (min-width: 769px) {
+  main {
+    flex-direction: row;
+    width: 90%;
+    height: 100%;
 
-    .intro,
-    .aboutMe,
-    .skills,
-    .portfolio {
+    section {
       display: flex;
-      flex-direction: column;
-      justify-content: start;
-      align-items: start;
-      width: 100%;
-      padding: 2rem;
-      background-color: $color2;
-      border-radius: 0 3rem 3rem 0;
-
-      title {
-        display: block;
-        border-radius: 3rem;
-        padding: 0 0.5rem;
-        background-color: $color4;
+      width: 50%;
+      height: 70%;
+      border-radius: 4rem;
+  
+      .intro,
+      .aboutMe,
+      .skills,
+      .portfolio {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 2rem;
+        background-color: $color-gray;
+        border-radius: 0 3rem 3rem 0;
+  
+        title {
+          display: block;
+          border-radius: 3rem;
+          padding: 0 0.5rem;
+          background-color: $color-red;
+        }
       }
     }
   }

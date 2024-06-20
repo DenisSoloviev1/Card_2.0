@@ -14,10 +14,10 @@ export default function AboutMe() {
         IT-подкасты, чтобы быть в курсе тенденций в технологиях
       </p>
       <div className="aboutInfo">
-        <div className="experience">
+        <h1>
           5 <p>месяцев опыта</p>
-        </div>
-        <div className="project">2 <p>готовых проекта</p></div>
+        </h1>
+        <h1>2 <p>готовых проекта</p></h1>
       </div>
     </div>
   );

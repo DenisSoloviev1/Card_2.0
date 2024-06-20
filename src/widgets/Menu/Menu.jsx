@@ -1,20 +1,25 @@
-import React, { useState } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
-import "./Header.scss";
-import Tooltip from "../../widgets/Tooltip/Tooltip.jsx";
-import HumburgerButton from "../Buttons/HumburgerButton/HumburgerButton.jsx";
-import Menu from "../Menu/Menu.jsx";
+import "./Menu.scss";
 
-export default function Header() {
-  const [showMenu, setShowMenu] = useState(false);
-  const toggleMenu = () => setShowMenu(!showMenu);
-
+export default function Menu({ show, handleClose }) {
   return (
-    <header>
-      <HumburgerButton showMenu={showMenu} toggleMenu={toggleMenu} />
-      <Menu show={showMenu} handleClose={toggleMenu}/>
-      <nav>
-        <Tooltip text={"главная"} to={"/"}>
+    <div className={`menu ${show ? "show" : ""}`}>
+      <title>
+        <h1>Denis</h1>
+        <button onClick={handleClose}>
+          <svg viewBox="0 0 325.438 325.438">
+            <g>
+              <g>
+                <path d="m325.438 31.182-131.537 131.537 131.537 131.537-31.182 31.182-131.537-131.537-131.537 131.537-31.182-31.182 131.537-131.537-131.537-131.537 31.182-31.182 131.537 131.537 131.537-131.537z" />
+              </g>
+            </g>
+          </svg>
+        </button>
+      </title>
+
+      <ul>
+        <li>
           <NavLink to="/">
             <svg className="icon" viewBox="0 0 74.398 74.398">
               <g>
@@ -32,10 +37,10 @@ export default function Header() {
                 </g>
               </g>
             </svg>
+            главная
           </NavLink>
-        </Tooltip>
-
-        <Tooltip text={"обо мне"} to={"/aboutMe"}>
+        </li>
+        <li>
           <NavLink to="/aboutMe">
             <svg className="icon" viewBox="0 0 32 32">
               <g>
@@ -43,10 +48,10 @@ export default function Header() {
                 <path d="M17,18H15A11,11,0,0,0,4,29a1,1,0,0,0,1,1H27a1,1,0,0,0,1-1A11,11,0,0,0,17,18ZM6.06,28A9,9,0,0,1,15,20h2a9,9,0,0,1,8.94,8Z" />
               </g>
             </svg>
+            обо мне
           </NavLink>
-        </Tooltip>
-
-        <Tooltip text={"навыки"} to={"/skills"}>
+        </li>
+        <li>
           <NavLink to="/skills">
             <svg className="icon" viewBox="0 0 512 512">
               <g>
@@ -55,10 +60,10 @@ export default function Header() {
                 </g>
               </g>
             </svg>
+            навыки
           </NavLink>
-        </Tooltip>
-
-        <Tooltip text={"портфолио"} to={"/portfolio"}>
+        </li>
+        <li>
           <NavLink to="/portfolio">
             <svg className="icon" viewBox="0 0 230.754 230.754">
               <g>
@@ -66,9 +71,10 @@ export default function Header() {
                 <path d="m110.627,114.026h9.5c3.313,0 6-2.687 6-6s-2.687-6-6-6h-9.5c-3.313,0-6,2.687-6,6s2.686,6 6,6z"></path>
               </g>
             </svg>
+            портфолио
           </NavLink>
-        </Tooltip>
-      </nav>
-    </header>
+        </li>
+      </ul>
+    </div>
   );
 }
