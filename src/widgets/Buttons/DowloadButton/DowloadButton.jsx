@@ -11,10 +11,7 @@ export default function DowloadButton({ url, text }) {
     document.body.removeChild(link);
   };
   return (
-    <button
-      className="button"
-      onClick={() => handleDownload({url})}
-    >
+    <button onClick={() => handleDownload({ url })}>
       <svg viewBox="0 0 471.2 471.2" width="2rem" height="2rem">
         <g>
           <g>
@@ -27,4 +24,3 @@ export default function DowloadButton({ url, text }) {
     </button>
   );
 }
-

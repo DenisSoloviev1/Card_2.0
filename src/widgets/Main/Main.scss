@@ -6,7 +6,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20% 0;
+  padding: 30% 0 10%;
   gap: 2rem;
 
   .intro,
@@ -24,8 +24,15 @@ main {
     title {
       display: block;
       border-radius: 3rem;
-      padding: 0 0.5rem;
+      padding: 0.5rem 1rem;
       background-color: $color-red;
+      @include adaptiv-font(40, 16);
+    }
+    h1 {
+      padding: 0.5rem 0;
+    }
+    h1, p {
+      text-align: center;
     }
   }
 }
@@ -33,32 +40,33 @@ main {
 @media screen and (min-width: 769px) {
   main {
     flex-direction: row;
+    justify-content: center;
     width: 90%;
     height: 100%;
+    gap: 0;
+    padding: 0;
 
-    section {
+    .intro,
+    .aboutMe,
+    .skills,
+    .portfolio {
       display: flex;
+      flex-direction: column;
+      align-items: start;
       width: 50%;
-      height: 70%;
-      border-radius: 4rem;
-  
-      .intro,
-      .aboutMe,
-      .skills,
-      .portfolio {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding: 2rem;
-        background-color: $color-gray;
-        border-radius: 0 3rem 3rem 0;
-  
-        title {
-          display: block;
-          border-radius: 3rem;
-          padding: 0 0.5rem;
-          background-color: $color-red;
-        }
+      height: 60%;
+      padding: 2rem;
+      background-color: $color-gray;
+      border-radius: 0 3rem 3rem 0;
+
+      title {
+        display: block;
+        border-radius: 3rem;
+        padding: 0 0.5rem;
+        background-color: $color-red;
+      }
+      h1, p {
+        text-align: left;
       }
     }
   }

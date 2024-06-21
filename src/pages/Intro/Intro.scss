@@ -3,61 +3,97 @@
 
 .buttonCircleGroup {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
-  height: 30%;
+  gap: 1rem;
+  padding: 1rem;
 
-  .button {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    border: 0;
-    background-color: $color-red;
-    color: $color-white;
-    gap: 1rem;
-    width: 50%;
-    height: 4rem;
-    padding: 1rem;
-    border-radius: 3rem;
-    transition: all 0.3s ease-in-out;
-    font-size: 1.5rem;
-  }
-  .button:hover {
-    border-radius: 0;
-    background-color: $color-gray;
-    color: $color-white;
-    border: 3px solid $color-red;
-    cursor: pointer;
-  }
   .circle {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    width: 11rem;
-    height: 11rem;
+    border-radius: 100%;
+    width: 8rem;
+    height: 8rem;
     border: 3px solid $color-white;
-    
-    img {
-      width: 100%;
-      height: 100%;
-      animation: rotating 6s infinite linear;
-    }
-    svg {
-      width: 4rem;
-      height: 4rem;
-      position: absolute;
+
+    a {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 100%;
+        height: 100%;
+        animation: rotating 6s infinite linear;
+      }
+      svg {
+        width: 12%;
+        position: absolute;
+      }
     }
   }
-  .circle:hover{
-    svg{
+  a:hover {
+    svg {
       animation: pulse 2s infinite;
     }
   }
 }
 .buttonCircleGroup svg {
   fill: $color-white;
+}
+
+@media screen and (min-width: 426px) {
+  .buttonCircleGroup {
+    .circle {
+      width: 10rem;
+      height: 10rem;
+
+      a {
+        svg {
+          width: 10%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .buttonCircleGroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 30%;
+
+    .circle {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      width: 11rem;
+      height: 11rem;
+      border: 3px solid $color-white;
+
+      img {
+        width: 100%;
+        height: 100%;
+        animation: rotating 6s infinite linear;
+      }
+      svg {
+        width: 4rem;
+        height: 4rem;
+        position: absolute;
+      }
+    }
+    .circle:hover {
+      svg {
+        animation: pulse 2s infinite;
+      }
+    }
+  }
+  .buttonCircleGroup svg {
+    fill: $color-white;
+  }
 }

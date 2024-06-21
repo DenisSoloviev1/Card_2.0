@@ -28,10 +28,14 @@ footer {
 
 @media screen and (min-width: 769px) {
   footer {
+    position: fixed;
+    right: 0;
     width: 5%;
     height: 100%;
 
     section {
+      position: absolute;
+      top:25%;
       width: 70%;
       transform: rotate(90deg);
       gap: 70%;

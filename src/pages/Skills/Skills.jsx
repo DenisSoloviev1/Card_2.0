@@ -1,25 +1,13 @@
 import "../../widgets/Main/Main.scss";
 import "./Skills.scss";
+import Skill from "../../widgets/Skill/Skill.jsx";
 
 export default function Skills() {
-  function Skill({ url, svg, name }) {
-    return (
-      <div className="skillCell">
-        <div className="skill">
-          <a href={url} target="_blank" rel="noreferrer">
-            {svg}
-          </a>
-        </div>
-        <p>{name}</p>
-      </div>
-    );
-  }
-
   return (
     <div className="skills">
       <title>навыки</title>
-      <h1>Мой инструментарий</h1>
-      <div className="board">
+      <h1>Hard Skills</h1>
+      <section>
         <Skill
           url={"https://developer.mozilla.org/en-US/docs/Web/HTML"}
           svg={
@@ -67,7 +55,7 @@ export default function Skills() {
               </g>
             </svg>
           }
-          name={"JS"}
+          name={"JavaScript"}
         />
         <Skill
           url={"https://react.dev/"}
@@ -90,7 +78,7 @@ export default function Skills() {
           }
           name={"Sass"}
         />
-      </div>
+      </section>
     </div>
   );
 }

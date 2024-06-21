@@ -6,7 +6,7 @@
   z-index: 1;
   left: 0;
   top: 0;
-  width: 80%;
+  width: 70%;
   height: 100%;
   overflow: auto;
   background-color: $color-gray;
@@ -36,10 +36,10 @@
   ul {
     width: 100%;
     box-sizing: border-box;
-
+    padding:0 0 0 1rem;
     li {
       list-style-type: none;
-      font-size: 1.5rem;
+      @include adaptiv-font(48, 24);
       padding-top: 1rem;
 
       a {
