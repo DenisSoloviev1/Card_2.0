@@ -11,6 +11,7 @@
     background-color: $color-red;
     color: $color-white;
     width: 100%;
+    height: auto;
     padding: 1rem;
     border-radius: 3rem;
     transition: all 0.3s ease-in-out;
@@ -35,6 +36,14 @@
   .buttonCircleGroup {
     button {
         width: 80%;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .buttonCircleGroup {
+    button {
+        width: 60%;
     }
   }
 }

@@ -31,11 +31,13 @@ main {
     h1 {
       padding: 0.5rem 0;
     }
-    h1, p {
+    h1,
+    p {
       text-align: center;
     }
   }
 }
+
 
 @media screen and (min-width: 769px) {
   main {
@@ -50,14 +52,17 @@ main {
     .aboutMe,
     .skills,
     .portfolio {
-      display: flex;
-      flex-direction: column;
       align-items: start;
       width: 50%;
-      height: 60%;
+      height: 65%;
       padding: 2rem;
-      background-color: $color-gray;
       border-radius: 0 3rem 3rem 0;
+      overflow-y: auto;
+      overflow-x: hidden;
+
+      &::-webkit-scrollbar {
+        width: 0;
+      }
 
       title {
         display: block;
@@ -65,9 +70,23 @@ main {
         padding: 0 0.5rem;
         background-color: $color-red;
       }
-      h1, p {
+
+      h1,
+      p {
         text-align: left;
       }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1339px) {
+  main {
+    .intro,
+    .aboutMe,
+    .skills,
+    .portfolio {
+      width: 50%;
+      height: 40%;
     }
   }
 }

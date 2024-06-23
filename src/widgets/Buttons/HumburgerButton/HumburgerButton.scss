@@ -1,18 +1,13 @@
 @import "../../../shared/Variables.scss";
 
 button {
-  position: relative;
-  left: 2%;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 30px;
   height: 100%;
-  background-color: $color-black;
-  border-radius: 100%;
-  border: 2px solid $color-white;
+  background-color: inherit;
   box-sizing: border-box;
-  padding: 2%;
 
   svg {
     height: 100%;

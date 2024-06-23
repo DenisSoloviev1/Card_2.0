@@ -8,7 +8,7 @@
   align-items: center;
   width: 100%;
   gap: 1rem;
-  padding: 1rem;
+  padding: 1rem 0;
 
   .circle {
     border-radius: 100%;
@@ -21,15 +21,19 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      position: relative;
+
 
       img {
         width: 100%;
         height: 100%;
         animation: rotating 6s infinite linear;
       }
+
       svg {
-        width: 12%;
+        width: 50%;
         position: absolute;
+        margin: auto; 
       }
     }
   }
@@ -43,20 +47,20 @@
   fill: $color-white;
 }
 
-@media screen and (min-width: 426px) {
-  .buttonCircleGroup {
-    .circle {
-      width: 10rem;
-      height: 10rem;
+// @media screen and (min-width: 426px) {
+//   .buttonCircleGroup {
+//     .circle {
+//       width: 10rem;
+//       height: 10rem;
 
-      a {
-        svg {
-          width: 10%;
-        }
-      }
-    }
-  }
-}
+//       a {
+//         svg {
+//           width: 50%;
+//         }
+//       }
+//     }
+//   }
+// }
 
 @media screen and (min-width: 769px) {
   .buttonCircleGroup {
@@ -76,15 +80,23 @@
       height: 11rem;
       border: 3px solid $color-white;
 
-      img {
-        width: 100%;
-        height: 100%;
-        animation: rotating 6s infinite linear;
-      }
-      svg {
-        width: 4rem;
-        height: 4rem;
-        position: absolute;
+      a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        img {
+          width: 100%;
+          height: 100%;
+          animation: rotating 6s infinite linear;
+        }
+
+        svg {
+          width: 50%;
+          margin: auto; /* Центрирование svg */
+        }
       }
     }
     .circle:hover {
@@ -95,5 +107,14 @@
   }
   .buttonCircleGroup svg {
     fill: $color-white;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .buttonCircleGroup {
+    .circle {
+      width: 15rem;
+      height: 15rem;
+    }
   }
 }
